@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>javascript масиви</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body onload="showDay();">
+    <script>
+    function showDay() {
+        let nDays=new Array("неділя", "понеділок", "вівторок", "середа", "четвер", "пятниця","субота");
+        let now=new Date();
+        let day=now.getDay();
+        let iDay=nDays[day];
+        let str="Сьогодні - " + iDay;
+        document.write(str);
+    }
+    </script>
+</body>
+</html>
